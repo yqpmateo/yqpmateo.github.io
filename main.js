@@ -116,6 +116,26 @@ $(".btn").click( function () {
         $("#"+randomChosenColour).fadeOut(100).fadeIn(100);
         playSound(randomChosenColour);
     }
+    
+    $('h1').click( () => {
+        if (gameStarted == false) 
+        {
+            gameStarted = true;
+            var randomNumber = nextSequence();
+            gamePattern(randomNumber);                 
+        } 
+    else if (gameOver == true ) {
+            arrGamePattern = [];
+            arrUserClickedPattern = [];     
+            gameOver = false;
+            gameLevel = -1;
+            gameStarted = true;
+            var randomNumber = nextSequence();
+            gamePattern(randomNumber);                 
+        } 
+
+    });
+
     $(document).on("keypress", function() {
         if (gameStarted == false) 
             {
