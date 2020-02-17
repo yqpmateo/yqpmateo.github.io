@@ -70,7 +70,7 @@ $(".btn").click( function () {
     };
     
     function playSound(color) {
-        var audioPlayFile = "/SimonGame/sounds/"
+        var audioPlayFile = "sounds/"
         switch (color) 
         {
             case "red":
