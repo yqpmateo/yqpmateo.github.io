@@ -1,4 +1,4 @@
-/// <reference path="/Users/amateo/Desktop/DefaultWeb/typings/globals/jquery/index.d.ts" />
+
 
 $(document).ready( function () {
 $("h1").mouseover()
